@@ -1,0 +1,7 @@
+sources:
+  - name: SnowKeyrus
+    database: DBT
+    schema: SHOP
+    tables:
+      - name: customers
+      - name: orders

@@ -1,0 +1,7 @@
+
+sources:
+  - name: SnowKeyrus
+    database: DBT
+    schema: STRIPE
+    tables:
+      - name: payment
