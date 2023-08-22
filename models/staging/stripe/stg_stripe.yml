@@ -3,11 +3,11 @@ version: 2
 models:
   - name: payment
     columns:
-      - name: PAY_STATUS
+      - name: paymentmethod
         tests:
           - accepted_values:
               values:
-                - creadit_card
+                - credit_card
                 - bank_transfer
                 - coupon
                 - gift_card
