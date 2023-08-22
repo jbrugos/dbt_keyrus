@@ -23,3 +23,9 @@ models:
                 - returned
                 - return_pending
                 - placed
+
+      - name: USER_ID
+        tests:
+            - relationships:
+                to: ref('customers')
+                field: id
