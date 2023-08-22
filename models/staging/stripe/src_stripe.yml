@@ -1,6 +1,5 @@
-
 sources:
-  - name: SnowKeyrus
+  - name: stripe
     database: DBT
     schema: STRIPE
     tables:

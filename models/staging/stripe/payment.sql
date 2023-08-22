@@ -1,13 +1,9 @@
-with raw as (
+with
+    rawp as (
 
-    select 
-        ID, 
-        ORDERID, 
-        PAYMENTMETHOD, 
-        STATUS, 
-        AMOUNT, 
-        CREATED, 
-        _BATCHED_AT
-    from {{ source('SnowKeyrus', 'payment') }}
-)
-select * from raw;
+        select id, orderid, paymentmethod, pay_status, amount, created, _batched_at
+        from {{ source("stripe", "payment") }}
+    )
+select *
+from rawp
+;
