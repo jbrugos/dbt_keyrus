@@ -1,6 +1,6 @@
 sources:
-  - name: stripe
+  - name: striping
     database: DBT
-    schema: STRIPE
+    schema: stripe
     tables:
       - name: payment
