@@ -1,5 +1,6 @@
 sources:
   - name: striping
+    description: The below table is available in a different schema to the shop data.
     database: DBT
     schema: stripe
     tables:
