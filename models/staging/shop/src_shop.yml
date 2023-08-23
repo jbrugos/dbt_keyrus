@@ -1,6 +1,6 @@
 sources:
   - name: SnowKeyrus
-    description: DB connection name in DBT ENV.
+    description: DB connection name in DBT ENV
     database: DBT
     schema: SHOP
     tables:

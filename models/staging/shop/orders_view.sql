@@ -1,3 +1,5 @@
+
+
 with
     raw as (
 
@@ -6,4 +8,3 @@ with
     )
 select *
 from raw
-;
