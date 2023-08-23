@@ -2,7 +2,7 @@ version: 2
 
 models:
   - name: customers
-    columns: 
+    columns:
       - name: id
         description: Unique customer id
         tests:
@@ -12,12 +12,12 @@ models:
   - name: orders
     columns:
       - name: id
-        description: unique order primary key not_null.
+        description: unique order primary key not_null
         tests:
           - unique
           - not_null
       - name: status
-        description: "{{ doc('order_status') }}"
+        description: '{{ doc("order_status") }}'
         tests:
           - accepted_values:
               values:
@@ -28,8 +28,8 @@ models:
                 - placed
 
       - name: USER_ID
-        description: order user id FK.
+        description: order user id FK
         tests:
-            - relationships:
-                to: ref('customers')
-                field: id
+          - relationships:
+              to: ref('customers')
+              field: id

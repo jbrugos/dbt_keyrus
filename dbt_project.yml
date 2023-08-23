@@ -33,10 +33,10 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 models:
   dbt_keyrus:
-    # Applies to all files under models/example/
-    staging:
-      materialized: view
-    models:
-      materialized: table
+      marts:
+        +materialized: table       
+      staging:
+          shop:
+              +materialized: view
     
     

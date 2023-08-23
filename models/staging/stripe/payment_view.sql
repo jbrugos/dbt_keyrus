@@ -6,4 +6,3 @@ with
     )
 select *
 from rawp
-;
