@@ -2,6 +2,6 @@ sources:
   - name: striping
     description: The below table is available in a different schema to the shop data.
     database: DBT
-    schema: stripe
+    schema: shop
     tables:
       - name: payment

@@ -1,9 +1,8 @@
-{#
-https://github.com/dbt-labs/dbt-learn-jinja/blob/main/macros/grant_select.sql
-https://docs.getdbt.com/reference/dbt-jinja-functions/log
-https://docs.getdbt.com/reference/dbt-jinja-functions/target
 
-#}
+-- https://github.com/dbt-labs/dbt-learn-jinja/blob/main/macros/grant_select.sql
+-- chttps://docs.getdbt.com/reference/dbt-jinja-functions/log
+-- https://docs.getdbt.com/reference/dbt-jinja-functions/target
+
 
 {% macro grant_select(schema=target.schema, role=target.role) %}
     
@@ -20,3 +19,4 @@ https://docs.getdbt.com/reference/dbt-jinja-functions/target
     {{ log('Priviledges granted! ', info=true) }}
 
 {% endmacro %}
+

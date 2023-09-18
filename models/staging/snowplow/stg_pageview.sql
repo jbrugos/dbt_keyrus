@@ -5,10 +5,17 @@ After about 10 minutes or so execute dbt run -m stg_page_views and your incremen
 Rebuild the entire model again by running dbt run --full-refresh
 #}
 
+{#
+
 {{ config(
     materialized = 'incremental',
     unique_key = 'page_view_id'
 ) }}
+
+#}
+
+{#
+
 with events as (
     select * from {{ source('snowplow', 'events') }}
     {% if is_incremental() %}
@@ -36,3 +43,5 @@ joined as (
     left join aggregated_page_events using (page_view_id)
 )
 select * from joined
+
+#}
