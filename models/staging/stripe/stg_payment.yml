@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: payment
+    columns: 
+      - name: pay_id
+        description: 'primary key of payment table'
+        tests:
+            - unique
+            - not_null
+
+      - name: status
+        tests:
+          - accepted_values:
+              values:
+                - "success"
+                - "fail"
+
+  
+
+        
