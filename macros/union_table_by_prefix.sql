@@ -13,7 +13,6 @@
       
     {% endfor -%}
     
-  
 {%- endmacro -%}
 
 /* https://github.com/dbt-labs/dbt-learn-jinja/blob/main/macros/union_tables_by_prefix.sql
