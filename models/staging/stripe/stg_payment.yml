@@ -15,6 +15,12 @@ models:
               values:
                 - "success"
                 - "fail"
+                
+      - name: orderid
+        tests:
+          - relationships:
+              field: id
+              to: ref('orders')
 
   
 
