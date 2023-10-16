@@ -36,10 +36,13 @@ models:
       marts:
         +materialized: table       
       staging:
+          demo: 
+              +materialized: view
+              +schema: demo
           shop:
               +materialized: view
           stripe:
               +materialized: view
-              +schema: marketing
+              +schema: stripe
     
     

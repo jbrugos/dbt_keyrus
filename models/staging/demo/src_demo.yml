@@ -1,0 +1,12 @@
+sources:
+  - name: demo
+    description: My demo connection to Snowflake
+    database: DBT
+    schema: DEMO
+    tables:
+      - name: demo_orders
+        columns:
+          - name: id
+            tests:
+              - unique
+              - not_null
