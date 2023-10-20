@@ -36,9 +36,6 @@ models:
       marts:
         +materialized: view    
       staging:
-          demo: 
-              +materialized: view
-              +schema: demo
           shop:
               +materialized: view
           stripe:

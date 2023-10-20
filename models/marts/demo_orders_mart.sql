@@ -7,7 +7,7 @@
         COALESCE(count(case when a.status != 'returned' then 1 end),0) as non_returned_order_count,
         array_agg(distinct a.id) as order_ids
 
-    from {{ ref("demo_orders") }} as a
+    from {{ ref("demo_orders_view") }} as a
 
      )
 
