@@ -1,5 +1,5 @@
 sources:
-  - name: demo
+  - name: demo_k
     description: My demo connection to Snowflake
     database: DBT
     schema: DEMO
