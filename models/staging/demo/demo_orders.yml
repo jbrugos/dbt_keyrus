@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: demo_orders_view
+    columns: 
+      - name: id
+        description: This is the order id field in the view
+        tests:
+          - unique
+          - not_null
+
+      - name: status
+        description: Order status field
+        tests:
+          - accepted_values:
+              values:
+                - "returned"
+                - "completed"
+                - "return_pending"
+                - "shipped"
+                - "placed"
+        

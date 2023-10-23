@@ -1,3 +1,4 @@
+{{ config( materialized='table', schema='demo') }}
 
 With mart_orders as (
     select 
