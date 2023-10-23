@@ -5,3 +5,11 @@ sources:
     schema: stripe
     tables:
       - name: payment
+        freshness:
+          warn_after:
+            count: 100
+            period: day
+          error_after:
+            count: 120
+            period: day
+        loaded_at_field: _BATCHED_AT
